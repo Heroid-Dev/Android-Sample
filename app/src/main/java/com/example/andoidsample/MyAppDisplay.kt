@@ -16,6 +16,7 @@ fun MyAppDisplay(modifier: Modifier = Modifier) {
         contentAlignment = Alignment.Center
     ) {
         Column {
+            // hi friend
             Text(text = "Welcome")
             Text(text = "Android Hero", style = MaterialTheme.typography.headlineSmall)
         }

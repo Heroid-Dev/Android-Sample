@@ -16,6 +16,7 @@ fun MyAppDisplay(modifier: Modifier = Modifier) {
         contentAlignment = Alignment.Center
     ) {
         Column {
+            // new comment pull test
             Text(text = "Welcome")
             Text(text = "Android Hero", style = MaterialTheme.typography.headlineSmall)
             Text(text = "I wanna be a best kotlin developer")

@@ -40,11 +40,19 @@ class MainActivity : ComponentActivity() {
 
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     AndoidSampleTheme {
-        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+        Scaffold(modifier = Modifier.fillMaxSize(),
+            topBar = {
+                TopAppBar(
+                    title = {
+                        Text(text = "Test App")
+                    }
+                )
+            }) { innerPadding ->
             MyAppDisplay(modifier = Modifier.padding(innerPadding))
         }
     }

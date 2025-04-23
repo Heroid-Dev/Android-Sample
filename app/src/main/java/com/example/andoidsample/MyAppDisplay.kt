@@ -21,6 +21,7 @@ fun MyAppDisplay(modifier: Modifier = Modifier) {
             // hi friend 3
             // hi friend 4
             // hi friend 5
+
             Text(text = "Welcome")
             Text(text = "Android Hero", style = MaterialTheme.typography.headlineSmall)
         }

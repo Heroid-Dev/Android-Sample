@@ -25,6 +25,7 @@ fun MyAppDisplay(modifier: Modifier = Modifier) {
             Text(text = "Welcome")
             Text(text = "Android Hero", style = MaterialTheme.typography.headlineSmall)
             Text(text = "I wanna be a best kotlin developer")
+            Text(text = "2025/04/23")
         }
     }
 }

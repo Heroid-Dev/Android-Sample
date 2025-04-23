@@ -3,6 +3,7 @@ package com.example.andoidsample
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -20,6 +21,11 @@ fun MyAppDisplay(modifier: Modifier = Modifier) {
             Text(text = "Android Hero", style = MaterialTheme.typography.headlineSmall)
             Text(text = "I wanna be a best kotlin developer")
             Text(text = "2025/04/23")
+            Button(
+                onClick = {}
+            ) {
+                Text("Log in")
+            }
         }
     }
 }

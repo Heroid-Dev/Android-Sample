@@ -34,8 +34,10 @@ class MainActivity : ComponentActivity() {
             AndoidSampleTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     MyApp(modifier = Modifier.padding(innerPadding)) {
-                        Text("Text Added")
-                        Text(text = "Hello Android", style = MaterialTheme.typography.titleLarge)
+                        Column {
+                            Text("Text Added")
+                            Text(text = "Hello Android", style = MaterialTheme.typography.titleLarge)
+                        }
                     }
                 }
             }
@@ -65,8 +67,10 @@ fun MyApp(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
 fun GreetingPreview() {
     AndoidSampleTheme {
         MyApp {
-            Text("Text Added")
-            Text(text = "Hello Android", style = MaterialTheme.typography.titleLarge)
+            Column {
+                Text("Text Added")
+                Text(text = "Hello Android", style = MaterialTheme.typography.titleLarge)
+            }
         }
     }
 }
